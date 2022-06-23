@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/testdb').then(() => {
 }).catch(() => {
     console.log("Failed to connect DB")
 });
-const port = 8080;
+const port = process.env.PORT || 3000;
 const protectedRoute = express.Router();
 
 app.set('key', 'secret');
