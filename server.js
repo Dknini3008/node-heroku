@@ -52,7 +52,7 @@ app.use("/post",postRoute);
 //Endpoints part
 app.get( '/api/get', function(req, res){
     res.send({
-        msg:'Hello',
+        msg:'Hell',
         content: 'Beauty'
     });
 });
